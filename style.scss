@@ -1,16 +1,8 @@
 // @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400');
 
-// $c_01: #f3f3f3;
-// $c_02: #2d2d2d;
-// $g_01: rgba(35,35,35,0.7);
-// $g_02: rgba(0,0,0,0.5);
-// $g_03: rgba(67,67,67,1);
-// $g_04: rgba(0,0,0,0.85);
+$c_01: #f3f3f3;
+$c_02: #2d2d2d;
 
-// body {
-//     width: 100%;
-//     margin: 0 auto;
-//     padding: 0 auto;
-//     position: relative;
-//     font-family: 'Montserrat', sans-serif;
-// }
+body {
+    background-color: $c_01;
+}
