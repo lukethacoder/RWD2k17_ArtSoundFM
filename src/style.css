@@ -1,0 +1,455 @@
+@font-face {
+  font-family: 'Bangkok';
+  src: url("BangkokPSMT.eot");
+  src: local("Bangkok"), local("BangkokPSMT"), url("BangkokPSMT.eot?#iefix") format("embedded-opentype"), url("BangkokPSMT.woff2") format("woff2"), url("BangkokPSMT.woff") format("woff"), url("BangkokPSMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  background-color: #E6E6E6; }
+
+body {
+  background-color: #E6E6E6;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+  body .navbar {
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0; }
+    body .navbar .navHeader {
+      background-color: #E6E6E6;
+      width: 100%;
+      height: 70%;
+      padding: 0 10%;
+      display: flex; }
+      body .navbar .navHeader .logo {
+        width: 65%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 2%;
+        justify-content: flex-start; }
+        body .navbar .navHeader .logo h1 {
+          width: 100%;
+          height: 50%;
+          font-size: 42px;
+          float: left;
+          color: #1E73BD;
+          font-family: "Bangkok";
+          margin: 0; }
+        body .navbar .navHeader .logo h2 {
+          width: 100%;
+          height: 50%;
+          font-size: 18px;
+          float: left;
+          color: #1E73BD;
+          font-family: "Nirmala UI";
+          margin: 0; }
+      body .navbar .navHeader .nowPlaying {
+        background-color: #FFF;
+        float: right;
+        width: 35%;
+        height: 100%;
+        margin-top: 2%;
+        display: block;
+        z-index: 100;
+        position: relative;
+        justify-content: flex-end; }
+        body .navbar .navHeader .nowPlaying .currentPlaying {
+          float: left;
+          padding: 2%;
+          position: absolute; }
+          body .navbar .navHeader .nowPlaying .currentPlaying h3 {
+            font-size: 16px; }
+          body .navbar .navHeader .nowPlaying .currentPlaying h4 {
+            font-size: 14px;
+            font-weight: bold; }
+          body .navbar .navHeader .nowPlaying .currentPlaying .upNext {
+            height: 50%;
+            width: 100%;
+            display: inline-block; }
+            body .navbar .navHeader .nowPlaying .currentPlaying .upNext div {
+              width: 25%;
+              float: left; }
+              body .navbar .navHeader .nowPlaying .currentPlaying .upNext div h4 {
+                font-weight: normal; }
+            body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack {
+              width: 75%; }
+              body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack h5 {
+                font-size: 12px; }
+              body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack h6 {
+                font-size: 10px; }
+        body .navbar .navHeader .nowPlaying img {
+          float: right;
+          width: auto;
+          height: 100%; }
+    body .navbar .navElements {
+      background-color: #003868;
+      width: 100%;
+      height: 30%;
+      padding: 0 10%;
+      z-index: 0; }
+      body .navbar .navElements ul {
+        list-style-type: none;
+        font-family: "Nirmala UI";
+        font-weight: bold;
+        padding: 0;
+        width: 65%;
+        float: left;
+        line-height: 50px; }
+        body .navbar .navElements ul a {
+          display: inline-block;
+          text-decoration: none;
+          padding-left: 1%; }
+          body .navbar .navElements ul a li {
+            color: #FFF; }
+        body .navbar .navElements ul a:nth-child(1) {
+          padding: 0; }
+  body .mainHeader {
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    background: url("img/events/bg01.jpg") center center no-repeat/cover;
+    overflow: hidden;
+    z-index: 0; }
+    body .mainHeader:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom right, rgba(90, 90, 90, 0.7), rgba(90, 90, 90, 0.7));
+      overflow: hidden !important;
+      z-index: 5; }
+    body .mainHeader div {
+      z-index: 50;
+      position: relative;
+      height: 100%; }
+      body .mainHeader div .eventInfo {
+        height: 75%;
+        z-index: 50;
+        color: #FFF;
+        width: 55%;
+        margin: 0 auto;
+        padding-top: 10%; }
+        body .mainHeader div .eventInfo h2 {
+          z-index: 50; }
+        body .mainHeader div .eventInfo h4 {
+          z-index: 50; }
+        body .mainHeader div .eventInfo h3 {
+          z-index: 50; }
+      body .mainHeader div .upcomingEvents {
+        width: 100%;
+        height: 25%;
+        padding: 0;
+        margin: 0;
+        background-color: #e6e6e6; }
+        body .mainHeader div .upcomingEvents section {
+          width: 80%;
+          height: 100%;
+          margin: 0 auto;
+          position: relative; }
+          body .mainHeader div .upcomingEvents section div {
+            width: 150px;
+            height: 150px;
+            color: #95989A;
+            background-color: #FFF;
+            position: absolute;
+            padding: 2%;
+            bottom: 20%;
+            left: 2%;
+            text-align: center;
+            display: block; }
+            body .mainHeader div .upcomingEvents section div h4 {
+              width: 100%;
+              margin: 0 auto; }
+            body .mainHeader div .upcomingEvents section div h3 {
+              width: 100%;
+              margin: 0 auto; }
+          body .mainHeader div .upcomingEvents section p {
+            width: 75%;
+            height: 98%;
+            margin: 1%;
+            float: right; }
+  body .pageContent {
+    width: 100%;
+    padding: 0 10%;
+    padding-bottom: 2%;
+    margin: 0 !important;
+    background-color: #E6E6E6;
+    display: block;
+    position: relative; }
+    body .pageContent .content {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      float: left;
+      background-color: #E6E6E6; }
+      body .pageContent .content header {
+        width: 100%;
+        background-color: #E6E6E6;
+        color: #1E73BD;
+        float: left; }
+        body .pageContent .content header p {
+          background-color: #FFF;
+          padding: 20%;
+          font-size: 18px; }
+          body .pageContent .content header p span {
+            font-weight: bold !important; }
+      body .pageContent .content h2 {
+        width: 100%;
+        float: left;
+        font-size: 1.2rem;
+        color: #FFF;
+        background-color: #003868;
+        padding: 4%;
+        margin: auto;
+        line-height: 100%; }
+      body .pageContent .content .articlesContainer {
+        width: 100%;
+        display: block;
+        position: relative;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        padding: 15px;
+        margin: 0;
+        background-color: #FFF; }
+        body .pageContent .content .articlesContainer > h2 {
+          font-size: 1.2rem;
+          color: #FFF;
+          background-color: #003868;
+          padding: 2%;
+          margin: 0 auto; }
+        body .pageContent .content .articlesContainer article {
+          height: 300px;
+          width: 100%;
+          float: left;
+          margin-bottom: 15px;
+          position: relative;
+          overflow: hidden;
+          color: #95989A;
+          transition: all 0.3s ease-in-out; }
+          body .pageContent .content .articlesContainer article:hover {
+            transition: all 0.3s ease-in-out; }
+            body .pageContent .content .articlesContainer article:hover .articleContent {
+              top: 0;
+              left: 0;
+              transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article:hover .articleContent .articleDate {
+                top: 5%;
+                left: 5%;
+                transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails {
+                width: 60%;
+                float: right;
+                margin: 6% auto;
+                transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h3 {
+                  font-size: 24px; }
+                body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h4 {
+                  font-size: 18px; }
+                body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h5 {
+                  font-size: 18px; }
+          body .pageContent .content .articlesContainer article .articleContent {
+            position: absolute;
+            top: 65%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #e6e6e6;
+            z-index: 10;
+            transition: all 0.3s ease-in-out; }
+            body .pageContent .content .articlesContainer article .articleContent .articleDate {
+              width: 110px;
+              height: 110px;
+              position: absolute;
+              top: -10%;
+              left: 5%;
+              background-color: #FFF;
+              display: flex;
+              justify-content: center;
+              vertical-align: middle;
+              text-align: center;
+              transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article .articleContent .articleDate h3 {
+                margin: auto; }
+            body .pageContent .content .articlesContainer article .articleContent .articleDetails {
+              width: 60%;
+              float: right;
+              margin: 3% auto;
+              transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article .articleContent .articleDetails h3 {
+                font-size: 20px;
+                transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article .articleContent .articleDetails h4 {
+                font-size: 14px;
+                transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article .articleContent .articleDetails h5 {
+                font-size: 14px;
+                transition: all 0.3s ease-in-out; }
+            body .pageContent .content .articlesContainer article .articleContent .articleParagraph {
+              width: 100%;
+              height: 25%;
+              float: right;
+              padding: 4%;
+              transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article .articleContent .articleParagraph p {
+                font-size: 14px;
+                text-overflow: ellipsis; }
+              body .pageContent .content .articlesContainer article .articleContent .articleParagraph button {
+                width: 90%;
+                background-color: #E6E6E6;
+                border: 1px solid #003868;
+                font-weight: bold;
+                position: absolute;
+                bottom: 3%;
+                left: 5%; }
+                body .pageContent .content .articlesContainer article .articleContent .articleParagraph button:hover {
+                  background-color: #003868; }
+                  body .pageContent .content .articlesContainer article .articleContent .articleParagraph button:hover a {
+                    color: #FFF; }
+                body .pageContent .content .articlesContainer article .articleContent .articleParagraph button a {
+                  padding: 1%;
+                  text-decoration: none;
+                  color: #95989A; }
+          body .pageContent .content .articlesContainer article .backgroundArticle {
+            z-index: 0;
+            float: left;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0; }
+        body .pageContent .content .articlesContainer article:nth-of-type(1) .backgroundArticle {
+          background: url("img/events/cafe.jpg") center center no-repeat/cover; }
+        body .pageContent .content .articlesContainer article:nth-of-type(2) .backgroundArticle {
+          background: url("img/events/concert.jpg") center center no-repeat/cover; }
+        body .pageContent .content .articlesContainer article:nth-of-type(3) .backgroundArticle {
+          background: url("img/events/write.jpg") center center no-repeat/cover; }
+        body .pageContent .content .articlesContainer article:nth-of-type(4) .backgroundArticle {
+          background: url("img/events/stage.jpg") center center no-repeat/cover; }
+    body .pageContent .rightColumn {
+      width: 100%;
+      margin: 0 auto;
+      float: right; }
+      body .pageContent .rightColumn section {
+        width: 100%; }
+        body .pageContent .rightColumn section ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          width: 100%; }
+          body .pageContent .rightColumn section ul > li {
+            background-color: #003868;
+            color: #FFF;
+            padding: 4%;
+            font-weight: bold; }
+          body .pageContent .rightColumn section ul a {
+            color: #95989A;
+            text-decoration: none; }
+            body .pageContent .rightColumn section ul a li {
+              padding: 4%; }
+              body .pageContent .rightColumn section ul a li span {
+                font-weight: bold; }
+          body .pageContent .rightColumn section ul a:nth-of-type(odd) li {
+            background-color: #E6E6E6 !important; }
+          body .pageContent .rightColumn section ul a:nth-of-type(even) li {
+            background-color: #FFF !important; }
+  body > footer {
+    margin: 0;
+    padding: 0 !important; }
+    body > footer > div {
+      margin: 0 !important;
+      padding: 0 !important; }
+  body footer {
+    width: 100% !important;
+    height: 150px;
+    display: block;
+    position: relative;
+    float: left; }
+    body footer div {
+      width: 100%;
+      height: 100%; }
+      body footer div .copyrightPrivacy {
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+        background-color: #003868; }
+        body footer div .copyrightPrivacy ul {
+          list-style-type: none;
+          width: 75%;
+          height: 100%;
+          margin: 0 auto;
+          padding: 0;
+          text-align: center;
+          display: flex;
+          justify-content: center; }
+          body footer div .copyrightPrivacy ul a {
+            color: #FFF;
+            float: left;
+            text-decoration: none;
+            margin: 2%;
+            text-align: center; }
+      body footer div .sponsorsPartners {
+        width: 100%;
+        margin-top: 2%; }
+        body footer div .sponsorsPartners h4 {
+          font-size: 18px;
+          text-align: center;
+          padding-bottom: 2%; }
+        body footer div .sponsorsPartners div {
+          height: 50%;
+          width: 80%;
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+          padding: 2% auto; }
+          body footer div .sponsorsPartners div a {
+            height: 90%;
+            width: 20%;
+            display: flex;
+            justify-content: center; }
+            body footer div .sponsorsPartners div a img {
+              height: 100%;
+              margin: 0 auto; }
+      body footer div .author {
+        width: 100%; }
+        body footer div .author h4 {
+          font-size: 12px;
+          text-align: center;
+          font-weight: light; }
+          body footer div .author h4 a {
+            color: #95989A;
+            text-decoration: none; }
+      body footer div .supportedBy {
+        width: 100%;
+        height: 50%; }
+        body footer div .supportedBy div {
+          height: 100%;
+          width: 80%;
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+          padding: 2% auto; }
+          body footer div .supportedBy div a {
+            height: 90%;
+            width: 50%;
+            padding: 1%; }
+            body footer div .supportedBy div a img {
+              height: 100%;
+              width: auto;
+              margin: 0 auto; }
+          body footer div .supportedBy div a:nth-of-type(1) img {
+            float: right; }
+          body footer div .supportedBy div a:nth-of-type(2) img {
+            float: left; }
