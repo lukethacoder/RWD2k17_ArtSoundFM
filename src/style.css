@@ -142,13 +142,14 @@ body {
       padding: 0;
       width: 100%;
       float: left; }
-      body .navElements ul a {
+      body .navElements ul li {
         display: flex;
         flex-direction: column;
-        text-decoration: none; }
-        body .navElements ul a li {
-          color: #FFF;
-          padding: 2%; }
+        text-decoration: none;
+        color: #FFF; }
+        body .navElements ul li a {
+          display: block;
+          color: #FFF; }
       body .navElements ul a:nth-child(1) {
         padding: 0; }
 
@@ -554,23 +555,28 @@ body {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        width: 100%; }
-        .pageContent .rightColumn section ul > li {
-          background-color: #003868;
+        width: 100%;
+        display: block; }
+        .pageContent .rightColumn section ul li:nth-of-type(1) {
+          background-color: #003868 !important;
           color: #FFF;
           padding: 4%;
           font-weight: bold; }
-        .pageContent .rightColumn section ul a {
-          color: #95989A;
-          text-decoration: none; }
-          .pageContent .rightColumn section ul a li {
-            padding: 4%; }
-            .pageContent .rightColumn section ul a li span {
+        .pageContent .rightColumn section ul li {
+          padding: 4%;
+          display: block; }
+          .pageContent .rightColumn section ul li a {
+            height: 100%;
+            color: #95989A;
+            text-decoration: none; }
+            .pageContent .rightColumn section ul li a span {
               font-weight: bold; }
-        .pageContent .rightColumn section ul a:nth-of-type(odd) li {
+        .pageContent .rightColumn section ul li:nth-of-type(2) {
           background-color: #E6E6E6 !important; }
-        .pageContent .rightColumn section ul a:nth-of-type(even) li {
+        .pageContent .rightColumn section ul li:nth-of-type(3) {
           background-color: #FFF !important; }
+        .pageContent .rightColumn section ul li:nth-of-type(4) {
+          background-color: #E6E6E6 !important; }
 
 > footer {
   margin: 0;
@@ -603,13 +609,15 @@ footer {
         display: flex;
         justify-content: center;
         flex-direction: column; }
-        footer div .copyrightPrivacy ul a {
+        footer div .copyrightPrivacy ul li {
           width: 100%;
           color: #FFF;
           float: left;
-          text-decoration: none;
           margin: 2%;
           text-align: center; }
+          footer div .copyrightPrivacy ul li a {
+            color: #FFF;
+            text-decoration: none; }
     footer div .sponsorsPartners {
       width: 100%;
       height: auto;
@@ -773,13 +781,14 @@ footer {
           padding: 0;
           width: 100%;
           float: left; }
-          body .navbar .navElements ul a {
+          body .navbar .navElements ul li {
             display: flex;
             flex-direction: column;
-            text-decoration: none; }
-            body .navbar .navElements ul a li {
-              color: #FFF;
-              padding: 2%; }
+            text-decoration: none;
+            color: #FFF; }
+            body .navbar .navElements ul li a {
+              display: block;
+              color: #FFF; }
           body .navbar .navElements ul a:nth-child(1) {
             padding: 0; }
     body .mainHeader {
@@ -1008,20 +1017,6 @@ footer {
               height: 100%;
               top: 0;
               left: 0; }
-      body .pageContent .rightColumn {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0; }
-        body .pageContent .rightColumn section {
-          width: 100%; }
-          body .pageContent .rightColumn section ul {
-            padding: 0;
-            margin: 0;
-            width: 100%; }
-            body .pageContent .rightColumn section ul > li {
-              padding: 5%; }
-            body .pageContent .rightColumn section ul a li {
-              padding: 5%; }
     body > footer {
       margin: 0;
       padding: 0 !important; }
@@ -1052,14 +1047,14 @@ footer {
             display: flex;
             justify-content: center;
             flex-direction: column; }
-            body footer div .copyrightPrivacy ul a {
+            body footer div .copyrightPrivacy ul li {
               width: 100%;
               color: #FFF;
               float: left;
               text-decoration: none;
               padding: 1%;
               text-align: center; }
-              body footer div .copyrightPrivacy ul a li {
+              body footer div .copyrightPrivacy ul li a {
                 width: 100%;
                 margin: 0;
                 padding: 0; }
@@ -1280,7 +1275,7 @@ footer {
           justify-content: flex-start;
           align-items: flex-start;
           flex-direction: row; }
-          body .navbar .navElements ul a {
+          body .navbar .navElements ul li {
             text-decoration: none;
             margin-right: 2%;
             display: flex;
@@ -1288,10 +1283,12 @@ footer {
             justify-content: center;
             align-items: center;
             height: 100%; }
-            body .navbar .navElements ul a li {
+            body .navbar .navElements ul li a {
               text-align: left;
               float: left;
-              padding: 0; }
+              padding: 0;
+              display: block;
+              color: #FFF; }
     body .mainHeader {
       width: 100%;
       height: 450px; }
@@ -1529,22 +1526,6 @@ footer {
               position: absolute;
               top: 0;
               left: 0; }
-      body .pageContent .rightColumn {
-        width: 100%;
-        margin: 0 auto;
-        float: right;
-        padding-left: 15px; }
-        body .pageContent .rightColumn section {
-          width: 100%; }
-          body .pageContent .rightColumn section ul {
-            padding: 0;
-            margin: 0;
-            width: 100%; }
-            body .pageContent .rightColumn section ul > li {
-              padding: 4%;
-              font-weight: bold; }
-            body .pageContent .rightColumn section ul a li {
-              padding: 4%; }
     body > footer {
       margin: 0;
       padding: 0 !important; }

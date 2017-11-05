@@ -179,14 +179,14 @@ body {
                 padding: 0;
                 width: 100%;
                 float: left;
-                a {
+                li {
                     display: flex;
                     flex-direction: column;
                     text-decoration: none;
-                    
-                    li {
+                    color: $white;
+                    a {
+                        display: block;
                         color: $white;
-                        padding: 2%;
                     }
                 }
                 a:nth-child(1) {
@@ -709,28 +709,35 @@ body {
                     padding: 0;
                     margin: 0;
                     width: 100%;
-                    > li {
-                        background-color: $dark_blue;
+                    display: block;
+                    li:nth-of-type(1) {
+                        background-color: $dark_blue !important;
                         color: $white;
                         padding: 4%;
                         font-weight: bold;
                     }
-                    a {
-                        color: $dark_grey;
-                        text-decoration: none;
-                        li {
-                            padding: 4%;
+                    li {
+                        padding: 4%;
+                        display: block;
+                        a {
+                            height: 100%;
+                            color: $dark_grey;
+                            text-decoration: none;
                             span {
                                 font-weight: bold;
                             }
                         }
                     }
-                    a:nth-of-type(odd) li {
+                    li:nth-of-type(2) {
                         background-color: $background !important;
 
                     }
-                    a:nth-of-type(even) li {
+                    li:nth-of-type(3) {
                         background-color: $white !important;
+                    }
+                    li:nth-of-type(4) {
+                        background-color: $background !important;
+
                     }
                 }
             }
@@ -768,13 +775,16 @@ body {
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-                    a {
+                    li {
                         width: 100%;
                         color: $white;                        
                         float: left;
-                        text-decoration: none;
                         margin: 2%;
                         text-align: center;
+                        a {
+                            color: $white;                        
+                            text-decoration: none;
+                        }
                     }
                 }
             }
@@ -980,14 +990,14 @@ body {
                     padding: 0;
                     width: 100%;
                     float: left;
-                    a {
+                    li {
                         display: flex;
                         flex-direction: column;
                         text-decoration: none;
-                        
-                        li {
+                        color: $white;
+                        a {
+                            display: block;
                             color: $white;
-                            padding: 2%;
                         }
                     }
                     a:nth-child(1) {
@@ -1270,25 +1280,7 @@ body {
                 }
             }
             .rightColumn {
-                width: 100%;
-                margin: 0 auto;
-                padding: 0;
-                section {
-                    width: 100%;
-                    ul {
-                        padding: 0;
-                        margin: 0;
-                        width: 100%;
-                        > li {
-                            padding: 5%;
-                        }
-                        a {
-                            li {
-                                padding: 5%;
-                            }
-                        }
-                    }
-                }
+                
             }
         }
         > footer {
@@ -1323,14 +1315,14 @@ body {
                         display: flex;
                         justify-content: center;
                         flex-direction: column;
-                        a {
+                        li {
                             width: 100%;
                             color: $white;                        
                             float: left;
                             text-decoration: none;
                             padding: 1%;
                             text-align: center;
-                            li {
+                            a {
                                 width: 100%;
                                 margin: 0;
                                 padding: 0;
@@ -1611,7 +1603,7 @@ body {
                 justify-content: flex-start;
                 align-items: flex-start;
                 flex-direction: row;
-                a {
+                li {
                     text-decoration: none;
                     margin-right: 2%;
                     display: flex;
@@ -1619,10 +1611,12 @@ body {
                     justify-content: center;
                     align-items: center;
                     height: 100%;
-                    li {
+                    a {
                         text-align: left;
                         float: left;
                         padding: 0;
+                        display: block;
+                        color: $white;
                     }
                 }
             }
@@ -1923,27 +1917,7 @@ body {
             }
         }
         .rightColumn {
-            width: 100%;
-            margin: 0 auto;
-            float: right;
-            padding-left: 15px;
-            section {
-                width: 100%;
-                ul {
-                    padding: 0;
-                    margin: 0;
-                    width: 100%;
-                    > li {
-                        padding: 4%;
-                        font-weight: bold;
-                    }
-                    a {
-                        li {
-                            padding: 4%;
-                        }
-                    }
-                }
-            }
+
         }
     }
     > footer {
