@@ -8,6 +8,16 @@
 html {
   background-color: #E6E6E6; }
 
+button {
+  border: 1px solid #003868;
+  background-color: #E6E6E6;
+  color: #95989A;
+  font-weight: bold;
+  padding: 1% 5%; }
+  button:hover {
+    background-color: #003868;
+    color: #E6E6E6; }
+
 body {
   background-color: #E6E6E6;
   width: 100%;
@@ -37,612 +47,1586 @@ body {
         position: relative; }
         body .navbar .navHeader .logo h1 {
           width: 100%;
-          height: 60%;
+          height: 65%;
           font-size: 42px;
           float: left;
           color: #1E73BD;
           font-family: "Bangkok";
-          margin: 0; }
+          margin: 0;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-start; }
         body .navbar .navHeader .logo h2 {
           width: 100%;
-          height: 50%;
+          height: 35%;
           font-size: 16px;
           float: left;
           color: #1E73BD;
           font-family: "Nirmala UI";
-          margin: 0; }
-      body .navbar .navHeader .nowPlaying {
-        background-color: #FFF;
-        float: left;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        display: block;
-        z-index: 100;
-        position: relative;
-        justify-content: flex-start;
-        order: 1; }
-        body .navbar .navHeader .nowPlaying .currentPlaying {
-          float: left;
-          padding: 0;
-          width: 100%;
+          margin: 0;
           display: flex;
-          flex-direction: column; }
-          body .navbar .navHeader .nowPlaying .currentPlaying .upNow {
-            width: 100%;
-            height: 75%;
-            z-index: 0;
-            display: flex;
-            justify-content: center;
-            padding-top: 2%;
-            padding-left: 5%;
-            flex-direction: column; }
-            body .navbar .navHeader .nowPlaying .currentPlaying .upNow h3 {
-              font-size: 16px; }
-            body .navbar .navHeader .nowPlaying .currentPlaying .upNow h4 {
-              font-size: 14px;
-              font-weight: bold; }
-          body .navbar .navHeader .nowPlaying .currentPlaying .upNext {
-            width: 100%;
-            height: 25%;
-            background-color: #1E73BD;
-            color: #FFF;
-            z-index: -50;
-            display: flex;
-            justify-content: center;
-            padding: 2%;
-            padding-left: 5%;
-            flex-direction: row;
-            overflow: hidden; }
-            body .navbar .navHeader .nowPlaying .currentPlaying .upNext div {
-              width: 25%;
-              float: left; }
-              body .navbar .navHeader .nowPlaying .currentPlaying .upNext div h4 {
-                font-weight: normal; }
-            body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack {
-              width: 75%; }
-              body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack h5 {
-                font-size: 12px; }
-              body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack h6 {
-                font-size: 10px; }
-        body .navbar .navHeader .nowPlaying img {
-          z-index: 50;
-          float: right;
-          width: auto;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          right: 0; }
-    body .navbar .navElements {
-      background-color: #003868;
+          align-items: flex-start;
+          justify-content: flex-start; }
+    body .navbar .nowPlaying {
+      background-color: #FFF;
+      float: left;
       width: 100%;
       height: auto;
-      padding: 0 10%;
-      z-index: 0; }
-      body .navbar .navElements ul {
-        list-style-type: none;
-        font-family: "Nirmala UI";
-        font-weight: bold;
-        padding: 0;
-        width: 100%;
-        float: left; }
-        body .navbar .navElements ul a {
-          display: flex;
-          flex-direction: column;
-          text-decoration: none; }
-          body .navbar .navElements ul a li {
-            color: #FFF;
-            padding: 2%; }
-        body .navbar .navElements ul a:nth-child(1) {
-          padding: 0; }
-  body .mainHeader {
-    width: 100%;
-    height: 450px;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    background: url("img/events/bg01.jpg") center center no-repeat/cover;
-    overflow: hidden;
-    z-index: 0; }
-    body .mainHeader:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-image: linear-gradient(to bottom right, rgba(90, 90, 90, 0.7), rgba(90, 90, 90, 0.7));
-      overflow: hidden !important;
-      z-index: 5; }
-    body .mainHeader div {
-      z-index: 50;
+      margin: 0;
+      display: block;
+      z-index: 100;
       position: relative;
-      height: 100%; }
-      body .mainHeader div .eventInfo {
-        height: 60%;
-        z-index: 50;
-        color: #FFF;
-        width: 55%;
-        margin: 0 auto;
-        padding-top: 10%; }
-        body .mainHeader div .eventInfo h2 {
-          z-index: 50; }
-        body .mainHeader div .eventInfo h4 {
-          z-index: 50; }
-        body .mainHeader div .eventInfo h3 {
-          z-index: 50; }
-      body .mainHeader div .upcomingEvents {
-        width: 100%;
-        height: 40%;
+      justify-content: flex-start;
+      order: 1; }
+      body .navbar .nowPlaying .currentPlaying {
+        float: left;
         padding: 0;
-        margin: 0;
-        background-color: #e6e6e6; }
-        body .mainHeader div .upcomingEvents section {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        body .navbar .nowPlaying .currentPlaying .upNow {
           width: 100%;
-          height: 100%;
-          margin: 0 auto;
-          position: relative;
+          height: 75%;
+          z-index: 0;
           display: flex;
+          justify-content: center;
+          padding-top: 2%;
+          padding-left: 5%;
+          flex-direction: column; }
+          body .navbar .nowPlaying .currentPlaying .upNow h3 {
+            font-size: 16px; }
+          body .navbar .nowPlaying .currentPlaying .upNow h4 {
+            font-size: 14px;
+            font-weight: bold; }
+        body .navbar .nowPlaying .currentPlaying .upNext {
+          width: 100%;
+          height: 25%;
+          background-color: #1E73BD;
+          color: #FFF;
+          z-index: -50;
+          display: flex;
+          justify-content: center;
+          padding: 2%;
+          padding-left: 5%;
           flex-direction: row;
+          overflow: hidden; }
+          body .navbar .nowPlaying .currentPlaying .upNext div {
+            width: 25%;
+            float: left; }
+            body .navbar .nowPlaying .currentPlaying .upNext div h4 {
+              font-weight: normal; }
+          body .navbar .nowPlaying .currentPlaying .upNext .nextTrack {
+            width: 75%; }
+            body .navbar .nowPlaying .currentPlaying .upNext .nextTrack h5 {
+              font-size: 12px; }
+            body .navbar .nowPlaying .currentPlaying .upNext .nextTrack h6 {
+              font-size: 10px; }
+      body .navbar .nowPlaying img {
+        z-index: 50;
+        float: right;
+        width: auto;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0; }
+  body .navElements {
+    background-color: #003868;
+    width: 100%;
+    height: auto;
+    padding: 0 10%;
+    z-index: 0; }
+    body .navElements ul {
+      list-style-type: none;
+      font-family: "Nirmala UI";
+      font-weight: bold;
+      padding: 0;
+      width: 100%;
+      float: left; }
+      body .navElements ul a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none; }
+        body .navElements ul a li {
+          color: #FFF;
+          padding: 2%; }
+      body .navElements ul a:nth-child(1) {
+        padding: 0; }
+
+.mainHeader {
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  background: url("img/events/bg01.jpg") center center no-repeat/cover;
+  overflow: hidden;
+  z-index: 0; }
+  .mainHeader:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, rgba(90, 90, 90, 0.7), rgba(90, 90, 90, 0.7));
+    overflow: hidden !important;
+    z-index: 5; }
+  .mainHeader div {
+    z-index: 50;
+    position: relative;
+    height: 100%; }
+    .mainHeader div .eventInfo {
+      height: 60%;
+      z-index: 50;
+      color: #FFF;
+      width: 55%;
+      margin: 0 auto;
+      padding-top: 10%; }
+      .mainHeader div .eventInfo h2 {
+        z-index: 50; }
+      .mainHeader div .eventInfo h4 {
+        z-index: 50; }
+      .mainHeader div .eventInfo h3 {
+        z-index: 50; }
+    .mainHeader div .upcomingEvents {
+      width: 100%;
+      height: 40%;
+      padding: 0;
+      margin: 0;
+      background-color: #e6e6e6; }
+      .mainHeader div .upcomingEvents section {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        vertical-align: middle;
+        align-items: center; }
+        .mainHeader div .upcomingEvents section div {
+          width: 30%;
+          height: 150px;
+          color: #95989A;
+          background-color: #FFF;
+          margin: 2%;
+          float: left;
+          display: flex;
           justify-content: center;
           vertical-align: middle;
+          text-align: center;
           align-items: center; }
-          body .mainHeader div .upcomingEvents section div {
-            width: 30%;
-            height: 150px;
+          .mainHeader div .upcomingEvents section div h3 {
+            margin: auto; }
+        .mainHeader div .upcomingEvents section p {
+          width: 60%;
+          margin: 0;
+          padding: 1% 0%;
+          float: right;
+          vertical-align: middle;
+          align-items: center; }
+
+.pageContent {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 2%;
+  margin: 0 !important;
+  background-color: #E6E6E6;
+  display: block;
+  position: relative; }
+  .pageContent .content {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    float: left;
+    background-color: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    flex-direction: column; }
+    .pageContent .content header {
+      width: 100%;
+      background-color: #E6E6E6;
+      color: #1E73BD;
+      float: left; }
+      .pageContent .content header p {
+        background-color: #FFF;
+        padding: 20%;
+        font-size: 18px; }
+        .pageContent .content header p span {
+          font-weight: bold !important; }
+    .pageContent .content > h2 {
+      width: 100%;
+      float: left;
+      font-size: 1rem;
+      color: #FFF;
+      background-color: #003868;
+      padding: 4%;
+      margin-left: 5%;
+      margin-bottom: 0; }
+    .pageContent .content .artsDiarySubmission {
+      width: 100%;
+      height: 100%;
+      padding: 5%;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      float: left;
+      background-color: #FFF;
+      display: flex;
+      justify-content: flex-start;
+      vertical-align: flex-start;
+      align-items: flex-start;
+      flex-direction: column; }
+      .pageContent .content .artsDiarySubmission form > .row {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #1E73BD;
+        color: #1E73BD; }
+        .pageContent .content .artsDiarySubmission form > .row > div {
+          padding: 1%;
+          margin-top: 1%; }
+        .pageContent .content .artsDiarySubmission form > .row .customerPartnerInput input {
+          margin: 0;
+          margin-top: 20px; }
+        .pageContent .content .artsDiarySubmission form > .row .customerPartnerInput p {
+          margin-top: 10px;
+          margin-left: 1.25rem; }
+        .pageContent .content .artsDiarySubmission form > .row .openingHours .inBetweenDates p {
+          padding: 2% 10%; }
+        .pageContent .content .artsDiarySubmission form > .row .termsAgreeButton input {
+          margin: 0;
+          margin-top: 20px; }
+        .pageContent .content .artsDiarySubmission form > .row .termsAgreeButton p {
+          margin-top: 10px;
+          margin-left: 1.25rem; }
+      .pageContent .content .artsDiarySubmission header {
+        width: 100%;
+        float: left; }
+        .pageContent .content .artsDiarySubmission header p {
+          padding: 20%;
+          font-size: 24px; }
+          .pageContent .content .artsDiarySubmission header p span {
+            font-weight: bold !important; }
+    .pageContent .content .membershipContainer {
+      width: 100%;
+      height: 100%;
+      padding: 5%;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      float: left;
+      background-color: #FFF;
+      display: flex;
+      justify-content: flex-start;
+      vertical-align: flex-start;
+      align-items: flex-start;
+      flex-direction: column; }
+      .pageContent .content .membershipContainer > p {
+        width: 100%;
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #1E73BD;
+        color: #1E73BD; }
+        .pageContent .content .membershipContainer > p span {
+          font-weight: bold !important; }
+      .pageContent .content .membershipContainer .row {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #1E73BD; }
+        .pageContent .content .membershipContainer .row div {
+          margin-bottom: 2%; }
+          .pageContent .content .membershipContainer .row div img {
+            height: 80%;
+            width: 100%;
+            overflow: hidden; }
+          .pageContent .content .membershipContainer .row div p {
+            height: 20%;
+            text-align: center;
+            padding: 3%;
+            font-weight: bold;
             color: #95989A;
+            background-color: #E6E6E6; }
+          .pageContent .content .membershipContainer .row div table {
+            width: 100%; }
+    .pageContent .content .membershipFormContainer {
+      width: 100%;
+      height: 100%;
+      padding: 5%;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      float: left;
+      background-color: #FFF;
+      display: flex;
+      justify-content: flex-start;
+      vertical-align: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      color: #1E73BD; }
+      .pageContent .content .membershipFormContainer p {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #1E73BD; }
+      .pageContent .content .membershipFormContainer .row {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column; }
+        .pageContent .content .membershipFormContainer .row ul {
+          width: 100%;
+          padding: 1%;
+          list-style-type: none !important;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          color: #95989A;
+          font-weight: bold; }
+          .pageContent .content .membershipFormContainer .row ul li {
+            width: 30%;
+            margin: 0;
+            padding: 2%; }
+            .pageContent .content .membershipFormContainer .row ul li:hover {
+              background-color: #003868;
+              color: #FFF; }
+        .pageContent .content .membershipFormContainer .row ul:nth-child(1) {
+          background-color: #003868;
+          color: #FFF; }
+        .pageContent .content .membershipFormContainer .row ul:nth-child(2) {
+          background-color: #E6E6E6; }
+        .pageContent .content .membershipFormContainer .row ul:nth-child(3) {
+          background-color: #FFF; }
+        .pageContent .content .membershipFormContainer .row ul:nth-child(4) {
+          color: #1E73BD;
+          background-color: #E6E6E6; }
+          .pageContent .content .membershipFormContainer .row ul:nth-child(4) li:nth-child(3):hover {
+            background-color: transparent; }
+      .pageContent .content .membershipFormContainer .totalPay {
+        width: 25%;
+        margin: 0 auto; }
+        .pageContent .content .membershipFormContainer .totalPay div {
+          width: 100%;
+          height: 100%;
+          color: #FFF;
+          background-color: #1E73BD;
+          margin-bottom: 10px;
+          float: left;
+          display: flex;
+          justify-content: center;
+          vertical-align: middle;
+          text-align: center;
+          align-items: center; }
+          .pageContent .content .membershipFormContainer .totalPay div h3 {
+            margin: auto;
+            padding: 25%; }
+    .pageContent .content .articlesContainer {
+      width: 100%;
+      display: block;
+      position: relative;
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      margin: 0;
+      background-color: #FFF; }
+      .pageContent .content .articlesContainer > h2 {
+        font-size: 1.2rem;
+        color: #FFF;
+        background-color: #003868;
+        padding: 2%;
+        margin: 0; }
+      .pageContent .content .articlesContainer article {
+        height: 300px;
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+        color: #95989A;
+        transition: all 0.3s ease-in-out; }
+        .pageContent .content .articlesContainer article:hover {
+          transition: all 0.3s ease-in-out; }
+          .pageContent .content .articlesContainer article:hover .articleContent {
+            top: 0;
+            left: 0;
+            transition: all 0.3s ease-in-out; }
+            .pageContent .content .articlesContainer article:hover .articleContent .articleDate {
+              top: 4%;
+              left: 6%;
+              transition: all 0.3s ease-in-out; }
+            .pageContent .content .articlesContainer article:hover .articleContent .articleDetails {
+              width: 60%;
+              float: right;
+              margin: 6% auto;
+              transition: all 0.3s ease-in-out; }
+              .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h3 {
+                font-size: 24px; }
+              .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h4 {
+                font-size: 18px; }
+              .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h5 {
+                font-size: 18px; }
+        .pageContent .content .articlesContainer article .articleContent {
+          position: absolute;
+          top: 65%;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #e6e6e6;
+          z-index: 10;
+          transition: all 0.3s ease-in-out; }
+          .pageContent .content .articlesContainer article .articleContent .articleDate {
+            width: 110px;
+            height: 110px;
+            position: absolute;
+            top: -10%;
+            left: 6%;
             background-color: #FFF;
-            margin: 2%;
-            float: left;
             display: flex;
             justify-content: center;
             vertical-align: middle;
             text-align: center;
-            align-items: center; }
-            body .mainHeader div .upcomingEvents section div h3 {
+            transition: all 0.3s ease-in-out; }
+            .pageContent .content .articlesContainer article .articleContent .articleDate h3 {
               margin: auto; }
-          body .mainHeader div .upcomingEvents section p {
+          .pageContent .content .articlesContainer article .articleContent .articleDetails {
             width: 60%;
-            margin: 1%;
-            float: right; }
-  body .pageContent {
+            float: right;
+            margin: 3% auto;
+            transition: all 0.3s ease-in-out; }
+            .pageContent .content .articlesContainer article .articleContent .articleDetails h3 {
+              font-size: 20px;
+              transition: all 0.3s ease-in-out; }
+            .pageContent .content .articlesContainer article .articleContent .articleDetails h4 {
+              font-size: 14px;
+              transition: all 0.3s ease-in-out; }
+            .pageContent .content .articlesContainer article .articleContent .articleDetails h5 {
+              font-size: 14px;
+              transition: all 0.3s ease-in-out; }
+          .pageContent .content .articlesContainer article .articleContent .articleParagraph {
+            width: 100%;
+            height: 25%;
+            float: right;
+            padding: 0 6%;
+            transition: all 0.3s ease-in-out; }
+            .pageContent .content .articlesContainer article .articleContent .articleParagraph p {
+              font-size: 14px;
+              text-overflow: ellipsis; }
+            .pageContent .content .articlesContainer article .articleContent .articleParagraph button {
+              width: 88%;
+              background-color: #E6E6E6;
+              border: 1px solid #003868;
+              font-weight: bold;
+              position: absolute;
+              bottom: 3%;
+              left: 6%; }
+              .pageContent .content .articlesContainer article .articleContent .articleParagraph button:hover {
+                background-color: #003868; }
+                .pageContent .content .articlesContainer article .articleContent .articleParagraph button:hover a {
+                  color: #FFF; }
+              .pageContent .content .articlesContainer article .articleContent .articleParagraph button a {
+                padding: 1%;
+                text-decoration: none;
+                color: #95989A; }
+        .pageContent .content .articlesContainer article .backgroundArticle {
+          z-index: 0;
+          float: left;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0; }
+      .pageContent .content .articlesContainer article:nth-of-type(1) .backgroundArticle {
+        background: url("img/events/cafe.jpg") center center no-repeat/cover; }
+      .pageContent .content .articlesContainer article:nth-of-type(2) .backgroundArticle {
+        background: url("img/events/concert.jpg") center center no-repeat/cover; }
+      .pageContent .content .articlesContainer article:nth-of-type(3) .backgroundArticle {
+        background: url("img/events/write.jpg") center center no-repeat/cover; }
+      .pageContent .content .articlesContainer article:nth-of-type(4) .backgroundArticle {
+        background: url("img/events/stage.jpg") center center no-repeat/cover; }
+  .pageContent .rightColumn {
     width: 100%;
-    padding: 0;
-    padding-bottom: 2%;
+    margin: 0 auto;
+    float: right; }
+    .pageContent .rightColumn section {
+      width: 100%; }
+      .pageContent .rightColumn section ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%; }
+        .pageContent .rightColumn section ul > li {
+          background-color: #003868;
+          color: #FFF;
+          padding: 4%;
+          font-weight: bold; }
+        .pageContent .rightColumn section ul a {
+          color: #95989A;
+          text-decoration: none; }
+          .pageContent .rightColumn section ul a li {
+            padding: 4%; }
+            .pageContent .rightColumn section ul a li span {
+              font-weight: bold; }
+        .pageContent .rightColumn section ul a:nth-of-type(odd) li {
+          background-color: #E6E6E6 !important; }
+        .pageContent .rightColumn section ul a:nth-of-type(even) li {
+          background-color: #FFF !important; }
+
+> footer {
+  margin: 0;
+  padding: 0 !important; }
+  > footer > div {
     margin: 0 !important;
-    background-color: #E6E6E6;
-    display: block;
-    position: relative; }
-    body .pageContent .content {
+    padding: 0 !important; }
+
+footer {
+  width: 100% !important;
+  height: auto;
+  display: block;
+  position: relative;
+  float: left; }
+  footer div {
+    width: 100%;
+    height: 100%; }
+    footer div .copyrightPrivacy {
+      width: 100%;
+      display: inline-block;
+      margin: 0 auto;
+      background-color: #003868; }
+      footer div .copyrightPrivacy ul {
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 3% 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+        footer div .copyrightPrivacy ul a {
+          width: 100%;
+          color: #FFF;
+          float: left;
+          text-decoration: none;
+          margin: 2%;
+          text-align: center; }
+    footer div .sponsorsPartners {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0; }
+      footer div .sponsorsPartners h4 {
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 2%;
+        padding-top: 4%; }
+      footer div .sponsorsPartners div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-direction: column; }
+        footer div .sponsorsPartners div a {
+          width: 100%;
+          display: flex;
+          justify-content: center; }
+          footer div .sponsorsPartners div a img {
+            height: 100%;
+            margin: 0 auto;
+            padding: 10% 0; }
+        footer div .sponsorsPartners div a:nth-of-type(1) {
+          margin-top: 0; }
+          footer div .sponsorsPartners div a:nth-of-type(1) img {
+            margin-top: 0;
+            padding-top: 0; }
+    footer div .supportedBy {
+      width: 100%;
+      height: 100%;
+      float: left; }
+      footer div .supportedBy h4 {
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 2%;
+        padding-top: 4%; }
+      footer div .supportedBy div {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 2% 0;
+        flex-direction: column; }
+        footer div .supportedBy div a {
+          height: auto;
+          width: 80%;
+          margin: 0 auto;
+          padding: 2%; }
+          footer div .supportedBy div a img {
+            height: auto;
+            width: 100%;
+            margin: 0 auto; }
+    footer div .author {
+      width: 100%;
+      margin-top: 2%;
+      margin-bottom: 3%; }
+      footer div .author h4 {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        font-weight: light; }
+        footer div .author h4 a {
+          color: #95989A;
+          text-decoration: none; }
+
+@media screen and (min-width: 576px) {
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; }
+    body .navbar {
       width: 100%;
       padding: 0;
-      margin: 0 auto;
-      margin-bottom: 25px;
-      float: left;
-      background-color: #E6E6E6;
-      display: flex;
-      justify-content: center;
-      vertical-align: middle;
-      align-items: center;
-      flex-direction: column; }
-      body .pageContent .content header {
+      margin: 0; }
+      body .navbar .navHeader {
         width: 100%;
-        background-color: #E6E6E6;
-        color: #1E73BD;
-        float: left; }
-        body .pageContent .content header p {
-          background-color: #FFF;
-          padding: 20%;
-          font-size: 18px; }
-          body .pageContent .content header p span {
-            font-weight: bold !important; }
-      body .pageContent .content h2 {
-        width: 100%;
-        float: left;
-        font-size: 1rem;
-        color: #FFF;
-        background-color: #003868;
-        padding: 4%;
-        margin-left: 5%;
-        margin-bottom: 0; }
-      body .pageContent .content .articlesContainer {
-        width: 100%;
-        display: block;
-        position: relative;
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-        margin: 0;
-        background-color: #FFF; }
-        body .pageContent .content .articlesContainer > h2 {
-          font-size: 1.2rem;
-          color: #FFF;
-          background-color: #003868;
-          padding: 2%;
-          margin: 0; }
-        body .pageContent .content .articlesContainer article {
-          height: 300px;
+        padding: 0;
+        flex-direction: column; }
+        body .navbar .navHeader .logo {
           width: 100%;
+          height: 125px;
+          padding: 5% 7%;
+          order: 2;
+          position: relative; }
+        body .navbar .navHeader .nowPlaying {
           float: left;
-          margin-bottom: 15px;
+          width: 100%;
+          height: auto;
+          margin: 0;
+          display: block;
+          z-index: 100;
           position: relative;
-          overflow: hidden;
-          color: #95989A;
-          transition: all 0.3s ease-in-out; }
-          body .pageContent .content .articlesContainer article:hover {
-            transition: all 0.3s ease-in-out; }
-            body .pageContent .content .articlesContainer article:hover .articleContent {
-              top: 0;
-              left: 0;
-              transition: all 0.3s ease-in-out; }
-              body .pageContent .content .articlesContainer article:hover .articleContent .articleDate {
-                top: 4%;
-                left: 6%;
-                transition: all 0.3s ease-in-out; }
-              body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails {
-                width: 60%;
-                float: right;
-                margin: 6% auto;
-                transition: all 0.3s ease-in-out; }
-                body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h3 {
-                  font-size: 24px; }
-                body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h4 {
-                  font-size: 18px; }
-                body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h5 {
-                  font-size: 18px; }
-          body .pageContent .content .articlesContainer article .articleContent {
+          justify-content: flex-start;
+          order: 1; }
+          body .navbar .navHeader .nowPlaying .currentPlaying {
+            float: left;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column; }
+            body .navbar .navHeader .nowPlaying .currentPlaying .upNow {
+              width: 100%;
+              height: 75%;
+              z-index: 0;
+              display: flex;
+              justify-content: center;
+              padding-top: 2%;
+              padding-left: 5%;
+              flex-direction: column; }
+              body .navbar .navHeader .nowPlaying .currentPlaying .upNow h3 {
+                font-size: 16px; }
+              body .navbar .navHeader .nowPlaying .currentPlaying .upNow h4 {
+                font-size: 14px;
+                font-weight: bold; }
+            body .navbar .navHeader .nowPlaying .currentPlaying .upNext {
+              width: 100%;
+              height: 25%;
+              background-color: #1E73BD;
+              color: #FFF;
+              z-index: -50;
+              display: flex;
+              justify-content: center;
+              padding: 2%;
+              padding-left: 5%;
+              flex-direction: row;
+              overflow: hidden; }
+              body .navbar .navHeader .nowPlaying .currentPlaying .upNext div {
+                width: 25%;
+                float: left; }
+                body .navbar .navHeader .nowPlaying .currentPlaying .upNext div h4 {
+                  font-weight: normal; }
+              body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack {
+                width: 75%; }
+                body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack h5 {
+                  font-size: 12px; }
+                body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack h6 {
+                  font-size: 10px; }
+          body .navbar .navHeader .nowPlaying img {
+            z-index: 50;
+            float: right;
+            width: auto;
+            height: 100%;
             position: absolute;
-            top: 65%;
-            left: 0;
+            top: 0;
+            right: 0; }
+      body .navbar .navElements {
+        background-color: #003868;
+        width: 100%;
+        height: auto;
+        padding: 0 5%;
+        z-index: 0; }
+        body .navbar .navElements ul {
+          list-style-type: none;
+          font-family: "Nirmala UI";
+          font-weight: bold;
+          padding: 0;
+          width: 100%;
+          float: left; }
+          body .navbar .navElements ul a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none; }
+            body .navbar .navElements ul a li {
+              color: #FFF;
+              padding: 2%; }
+          body .navbar .navElements ul a:nth-child(1) {
+            padding: 0; }
+    body .mainHeader {
+      width: 100%;
+      height: 450px;
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
+      background: url("img/events/bg01.jpg") center center no-repeat/cover;
+      overflow: hidden;
+      z-index: 0; }
+      body .mainHeader:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right, rgba(90, 90, 90, 0.7), rgba(90, 90, 90, 0.7));
+        overflow: hidden !important;
+        z-index: 5; }
+      body .mainHeader div {
+        z-index: 50;
+        position: relative;
+        height: 100%; }
+        body .mainHeader div .eventInfo {
+          height: 60%;
+          z-index: 50;
+          color: #FFF;
+          width: 55%;
+          margin: 0 auto;
+          padding-top: 10%; }
+          body .mainHeader div .eventInfo h2 {
+            z-index: 50; }
+          body .mainHeader div .eventInfo h4 {
+            z-index: 50; }
+          body .mainHeader div .eventInfo h3 {
+            z-index: 50; }
+        body .mainHeader div .upcomingEvents {
+          width: 100%;
+          height: 40%;
+          padding: 0;
+          margin: 0;
+          background-color: #e6e6e6; }
+          body .mainHeader div .upcomingEvents section {
             width: 100%;
             height: 100%;
-            background-color: #e6e6e6;
-            z-index: 10;
-            transition: all 0.3s ease-in-out; }
-            body .pageContent .content .articlesContainer article .articleContent .articleDate {
-              width: 110px;
-              height: 110px;
-              position: absolute;
-              top: -10%;
-              left: 6%;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            vertical-align: middle;
+            align-items: center; }
+            body .mainHeader div .upcomingEvents section div {
+              width: 30%;
+              height: 150px;
+              color: #95989A;
               background-color: #FFF;
+              margin: 2%;
+              float: left;
               display: flex;
               justify-content: center;
               vertical-align: middle;
               text-align: center;
-              transition: all 0.3s ease-in-out; }
-              body .pageContent .content .articlesContainer article .articleContent .articleDate h3 {
+              align-items: center; }
+              body .mainHeader div .upcomingEvents section div h3 {
                 margin: auto; }
-            body .pageContent .content .articlesContainer article .articleContent .articleDetails {
+            body .mainHeader div .upcomingEvents section p {
               width: 60%;
-              float: right;
-              margin: 3% auto;
-              transition: all 0.3s ease-in-out; }
-              body .pageContent .content .articlesContainer article .articleContent .articleDetails h3 {
-                font-size: 20px;
-                transition: all 0.3s ease-in-out; }
-              body .pageContent .content .articlesContainer article .articleContent .articleDetails h4 {
-                font-size: 14px;
-                transition: all 0.3s ease-in-out; }
-              body .pageContent .content .articlesContainer article .articleContent .articleDetails h5 {
-                font-size: 14px;
-                transition: all 0.3s ease-in-out; }
-            body .pageContent .content .articlesContainer article .articleContent .articleParagraph {
-              width: 100%;
-              height: 25%;
-              float: right;
-              padding: 0 6%;
-              transition: all 0.3s ease-in-out; }
-              body .pageContent .content .articlesContainer article .articleContent .articleParagraph p {
-                font-size: 14px;
-                text-overflow: ellipsis; }
-              body .pageContent .content .articlesContainer article .articleContent .articleParagraph button {
-                width: 88%;
-                background-color: #E6E6E6;
-                border: 1px solid #003868;
-                font-weight: bold;
-                position: absolute;
-                bottom: 3%;
-                left: 6%; }
-                body .pageContent .content .articlesContainer article .articleContent .articleParagraph button:hover {
-                  background-color: #003868; }
-                  body .pageContent .content .articlesContainer article .articleContent .articleParagraph button:hover a {
-                    color: #FFF; }
-                body .pageContent .content .articlesContainer article .articleContent .articleParagraph button a {
-                  padding: 1%;
-                  text-decoration: none;
-                  color: #95989A; }
-          body .pageContent .content .articlesContainer article .backgroundArticle {
-            z-index: 0;
-            float: left;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0; }
-        body .pageContent .content .articlesContainer article:nth-of-type(1) .backgroundArticle {
-          background: url("img/events/cafe.jpg") center center no-repeat/cover; }
-        body .pageContent .content .articlesContainer article:nth-of-type(2) .backgroundArticle {
-          background: url("img/events/concert.jpg") center center no-repeat/cover; }
-        body .pageContent .content .articlesContainer article:nth-of-type(3) .backgroundArticle {
-          background: url("img/events/write.jpg") center center no-repeat/cover; }
-        body .pageContent .content .articlesContainer article:nth-of-type(4) .backgroundArticle {
-          background: url("img/events/stage.jpg") center center no-repeat/cover; }
-    body .pageContent .rightColumn {
+              margin: 0;
+              padding: 1% 0%;
+              float: right; }
+    body .pageContent {
       width: 100%;
-      margin: 0 auto;
-      float: right; }
-      body .pageContent .rightColumn section {
-        width: 100%; }
-        body .pageContent .rightColumn section ul {
-          list-style-type: none;
-          padding: 0;
-          margin: 0;
-          width: 100%; }
-          body .pageContent .rightColumn section ul > li {
-            background-color: #003868;
-            color: #FFF;
-            padding: 4%;
-            font-weight: bold; }
-          body .pageContent .rightColumn section ul a {
-            color: #95989A;
-            text-decoration: none; }
-            body .pageContent .rightColumn section ul a li {
-              padding: 4%; }
-              body .pageContent .rightColumn section ul a li span {
-                font-weight: bold; }
-          body .pageContent .rightColumn section ul a:nth-of-type(odd) li {
-            background-color: #E6E6E6 !important; }
-          body .pageContent .rightColumn section ul a:nth-of-type(even) li {
-            background-color: #FFF !important; }
-  body > footer {
-    margin: 0;
-    padding: 0 !important; }
-    body > footer > div {
+      padding: 0;
       margin: 0 !important;
-      padding: 0 !important; }
-  body footer {
-    width: 100% !important;
-    height: auto;
-    display: block;
-    position: relative;
-    float: left; }
-    body footer div {
-      width: 100%;
-      height: 100%; }
-      body footer div .copyrightPrivacy {
+      background-color: #E6E6E6;
+      display: block;
+      position: relative; }
+      body .pageContent .row {
         width: 100%;
-        display: inline-block;
-        margin: 0 auto;
-        background-color: #003868; }
-        body footer div .copyrightPrivacy ul {
-          list-style-type: none;
-          width: 100%;
-          height: 100%;
-          margin: 0 auto;
-          padding: 3% 0;
-          text-align: center;
-          display: flex;
-          justify-content: center;
-          flex-direction: column; }
-          body footer div .copyrightPrivacy ul a {
-            width: 100%;
-            color: #FFF;
-            float: left;
-            text-decoration: none;
-            margin: 2%;
-            text-align: center; }
-      body footer div .sponsorsPartners {
-        width: 100%;
-        height: auto;
         margin: 0;
         padding: 0; }
-        body footer div .sponsorsPartners h4 {
-          font-size: 18px;
-          text-align: center;
-          padding-bottom: 2%;
-          padding-top: 4%; }
-        body footer div .sponsorsPartners div {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          margin: 0 auto;
-          flex-direction: column; }
-          body footer div .sponsorsPartners div a {
-            width: 100%;
-            display: flex;
-            justify-content: center; }
-            body footer div .sponsorsPartners div a img {
-              height: 100%;
-              margin: 0 auto;
-              padding: 10% 0; }
-          body footer div .sponsorsPartners div a:nth-of-type(1) {
-            margin-top: 0; }
-            body footer div .sponsorsPartners div a:nth-of-type(1) img {
-              margin-top: 0;
-              padding-top: 0; }
-      body footer div .supportedBy {
+      body .pageContent .content {
         width: 100%;
-        height: 100%;
-        float: left; }
-        body footer div .supportedBy h4 {
-          font-size: 18px;
-          text-align: center;
-          padding-bottom: 2%;
-          padding-top: 4%; }
-        body footer div .supportedBy div {
-          height: 100%;
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          margin: 0 auto;
-          padding: 2% 0;
-          flex-direction: column; }
-          body footer div .supportedBy div a {
-            height: auto;
-            width: 80%;
-            margin: 0 auto;
-            padding: 2%; }
-            body footer div .supportedBy div a img {
-              height: auto;
-              width: 100%;
-              margin: 0 auto; }
-      body footer div .author {
-        width: 100%;
-        margin-top: 2%;
-        margin-bottom: 3%; }
-        body footer div .author h4 {
-          width: 100%;
-          font-size: 12px;
-          text-align: center;
-          font-weight: light; }
-          body footer div .author h4 a {
-            color: #95989A;
-            text-decoration: none; }
-
-@media screen and (min-width: 1200px) {
-  .navbar {
-    width: 100%;
-    height: 650px;
-    padding: 0;
-    margin: 0; }
-    .navbar .navHeader {
-      background-color: green !important;
-      width: 100%;
-      height: 70%;
-      padding: 0 10%;
-      display: flex; }
-      .navbar .navHeader .logo {
-        width: 65%;
-        height: 100%;
+        padding: 0;
+        margin: 0;
+        float: left;
+        background-color: #E6E6E6;
         display: flex;
-        align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-        padding-top: 2%;
-        justify-content: flex-start; }
-        .navbar .navHeader .logo h1 {
+        vertical-align: middle;
+        align-items: center;
+        flex-direction: column; }
+        body .pageContent .content header {
           width: 100%;
-          height: 50%;
-          font-size: 42px;
+          background-color: #E6E6E6;
+          color: #1E73BD;
           float: left;
-          color: yellow;
-          font-family: "Bangkok";
           margin: 0; }
-        .navbar .navHeader .logo h2 {
+          body .pageContent .content header p {
+            background-color: #FFF;
+            padding: 15%;
+            font-size: 18px;
+            width: 100%;
+            height: 100%; }
+            body .pageContent .content header p span {
+              font-weight: bold !important; }
+        body .pageContent .content > h2 {
           width: 100%;
-          height: 50%;
-          font-size: 18px;
           float: left;
-          color: teal;
-          font-family: "Nirmala UI";
-          margin: 0; }
-      .navbar .navHeader .nowPlaying {
-        background-color: #FFF;
-        float: right;
-        width: 35%;
-        height: 100%;
-        margin-top: 2%;
-        display: block;
-        z-index: 100;
-        position: relative;
-        justify-content: flex-end; }
-        .navbar .navHeader .nowPlaying .currentPlaying {
-          float: left;
-          padding: 2%;
-          position: absolute;
+          font-size: 1rem;
+          color: #FFF;
+          background-color: #003868;
+          padding: 4% 5%;
+          margin: 0 !important; }
+        body .pageContent .content .articlesContainer {
           width: 100%;
-          height: 100%;
-          transition: all 0.3s ease-in-out; }
-          .navbar .navHeader .nowPlaying .currentPlaying:hover {
+          display: block;
+          position: relative;
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+          margin: 0;
+          background-color: #FFF; }
+          body .pageContent .content .articlesContainer > h2 {
+            font-size: 1.2rem;
+            color: #FFF;
+            background-color: #003868;
+            padding: 2%;
+            margin: 0; }
+          body .pageContent .content .articlesContainer article {
+            height: 350px;
+            width: 100%;
+            float: left;
+            margin: 0;
+            margin-bottom: 15px;
+            position: relative;
+            overflow: hidden;
+            color: #95989A;
             transition: all 0.3s ease-in-out; }
-            .navbar .navHeader .nowPlaying .currentPlaying:hover .upNow {
-              color: #FFF;
-              transition: all 0s ease-in-out; }
-            .navbar .navHeader .nowPlaying .currentPlaying:hover .upNext {
-              width: 100%;
+            body .pageContent .content .articlesContainer article:hover {
+              transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article:hover .articleContent {
+                top: 0;
+                left: 0;
+                transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article:hover .articleContent .articleDate {
+                  top: 4%;
+                  left: 6%;
+                  transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails {
+                  width: 60%;
+                  float: right;
+                  margin: 6% auto;
+                  transition: all 0.3s ease-in-out; }
+                  body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h3 {
+                    font-size: 24px; }
+                  body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h4 {
+                    font-size: 18px; }
+                  body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h5 {
+                    font-size: 18px; }
+            body .pageContent .content .articlesContainer article .articleContent {
               position: absolute;
-              top: 0%;
-              right: 0%;
-              padding-left: 4%;
+              top: 65%;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: #e6e6e6;
               z-index: 10;
               transition: all 0.3s ease-in-out; }
-          .navbar .navHeader .nowPlaying .currentPlaying .upNow {
-            position: absolute;
-            left: 0;
-            top: 0;
+              body .pageContent .content .articlesContainer article .articleContent .articleDate {
+                width: 110px;
+                height: 110px;
+                position: absolute;
+                top: -10%;
+                left: 6%;
+                background-color: #FFF;
+                display: flex;
+                justify-content: center;
+                vertical-align: middle;
+                text-align: center;
+                transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article .articleContent .articleDate h3 {
+                  margin: auto; }
+              body .pageContent .content .articlesContainer article .articleContent .articleDetails {
+                width: 60%;
+                float: right;
+                margin: 3% auto;
+                transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article .articleContent .articleDetails h3 {
+                  font-size: 20px;
+                  transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article .articleContent .articleDetails h4 {
+                  font-size: 14px;
+                  transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article .articleContent .articleDetails h5 {
+                  font-size: 14px;
+                  transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article .articleContent .articleParagraph {
+                width: 100%;
+                height: 25%;
+                float: right;
+                padding: 0 6%;
+                transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article .articleContent .articleParagraph p {
+                  font-size: 14px;
+                  text-overflow: ellipsis; }
+                body .pageContent .content .articlesContainer article .articleContent .articleParagraph button {
+                  width: 88%;
+                  background-color: #E6E6E6;
+                  border: 1px solid #003868;
+                  font-weight: bold;
+                  position: absolute;
+                  bottom: 3%;
+                  left: 6%; }
+                  body .pageContent .content .articlesContainer article .articleContent .articleParagraph button:hover {
+                    background-color: #003868; }
+                    body .pageContent .content .articlesContainer article .articleContent .articleParagraph button:hover a {
+                      color: #FFF; }
+                  body .pageContent .content .articlesContainer article .articleContent .articleParagraph button a {
+                    padding: 1%; }
+            body .pageContent .content .articlesContainer article .backgroundArticle {
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0; }
+      body .pageContent .rightColumn {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0; }
+        body .pageContent .rightColumn section {
+          width: 100%; }
+          body .pageContent .rightColumn section ul {
+            padding: 0;
+            margin: 0;
+            width: 100%; }
+            body .pageContent .rightColumn section ul > li {
+              padding: 5%; }
+            body .pageContent .rightColumn section ul a li {
+              padding: 5%; }
+    body > footer {
+      margin: 0;
+      padding: 0 !important; }
+      body > footer > div {
+        margin: 0 !important;
+        padding: 0 !important; }
+    body footer {
+      width: 100% !important;
+      height: auto;
+      display: block;
+      position: relative;
+      float: left; }
+      body footer div {
+        width: 100%;
+        height: 100%; }
+        body footer div .copyrightPrivacy {
+          width: 100%;
+          display: inline-block;
+          margin: 0 auto;
+          background-color: #003868; }
+          body footer div .copyrightPrivacy ul {
+            list-style-type: none;
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 3% 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column; }
+            body footer div .copyrightPrivacy ul a {
+              width: 100%;
+              color: #FFF;
+              float: left;
+              text-decoration: none;
+              padding: 1%;
+              text-align: center; }
+              body footer div .copyrightPrivacy ul a li {
+                width: 100%;
+                margin: 0;
+                padding: 0; }
+        body footer div .sponsorsPartners {
+          width: 100%;
+          height: auto;
+          margin: 0;
+          padding: 0; }
+          body footer div .sponsorsPartners h4 {
+            font-size: 18px;
+            text-align: center;
+            padding-bottom: 2%;
+            padding-top: 4%; }
+          body footer div .sponsorsPartners div {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            flex-direction: column; }
+            body footer div .sponsorsPartners div a {
+              width: 100%;
+              display: flex;
+              justify-content: center; }
+              body footer div .sponsorsPartners div a img {
+                height: 100%;
+                margin: 0 auto;
+                padding: 10% 0; }
+            body footer div .sponsorsPartners div a:nth-of-type(1) {
+              margin-top: 0; }
+              body footer div .sponsorsPartners div a:nth-of-type(1) img {
+                margin-top: 0;
+                padding-top: 0; }
+        body footer div .supportedBy {
+          width: 100%;
+          height: 100%;
+          float: left; }
+          body footer div .supportedBy h4 {
+            font-size: 18px;
+            text-align: center;
+            padding-bottom: 2%;
+            padding-top: 4%; }
+          body footer div .supportedBy div {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 2% 0;
+            flex-direction: column; }
+            body footer div .supportedBy div a {
+              height: auto;
+              width: 80%;
+              margin: 0 auto;
+              padding: 2%; }
+              body footer div .supportedBy div a img {
+                height: auto;
+                width: 100%;
+                margin: 0 auto; }
+        body footer div .author {
+          width: 100%;
+          margin-top: 2%;
+          margin-bottom: 3%; }
+          body footer div .author h4 {
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            font-weight: light; } }
+
+@media screen and (min-width: 1200px) {
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; }
+    body .navbar {
+      width: 100%;
+      height: 150px;
+      padding: 0;
+      margin: 0; }
+      body .navbar .navHeader {
+        width: 100%;
+        height: 70%;
+        padding: 0 10%;
+        margin: 0;
+        display: flex;
+        flex-direction: row; }
+        body .navbar .navHeader .logo {
+          width: 75%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding-top: 2%;
+          justify-content: flex-start;
+          order: 1;
+          padding: 0;
+          align-items: center; }
+          body .navbar .navHeader .logo h1 {
+            width: 100%;
+            height: 65%;
+            font-size: 42px;
+            float: left;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start; }
+          body .navbar .navHeader .logo h2 {
+            width: 100%;
+            height: 35%;
+            font-size: 18px;
+            float: left;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start; }
+        body .navbar .navHeader .nowPlaying {
+          float: right;
+          width: 20%;
+          height: 65%;
+          margin: 0;
+          padding: 0;
+          z-index: 100;
+          position: absolute;
+          top: 15%;
+          right: 10%;
+          justify-content: flex-end;
+          order: 2; }
+          body .navbar .navHeader .nowPlaying .currentPlaying {
+            float: left;
+            padding: 2%;
+            position: absolute !important;
             width: 100%;
             height: 100%;
-            z-index: 0;
-            display: flex;
-            justify-content: center;
-            padding-top: 2%;
-            padding-left: 4%;
-            transition: all 0s ease-in-out;
-            flex-direction: column; }
-            .navbar .navHeader .nowPlaying .currentPlaying .upNow h3 {
-              font-size: 16px;
-              transition: all 0.3s ease-in-out; }
-            .navbar .navHeader .nowPlaying .currentPlaying .upNow h4 {
-              font-size: 14px;
-              font-weight: bold;
-              transition: all 0.3s ease-in-out; }
-          .navbar .navHeader .nowPlaying .currentPlaying .upNext {
-            height: 100%;
-            width: 10%;
-            background-color: #1E73BD;
-            color: #FFF;
-            position: absolute;
-            top: 0%;
-            right: 10%;
-            z-index: -50;
-            display: flex;
-            justify-content: center;
-            padding-top: 2%;
-            flex-direction: column;
-            overflow: hidden;
             transition: all 0.3s ease-in-out; }
-            .navbar .navHeader .nowPlaying .currentPlaying .upNext div {
-              transition: all 0.3s ease-in-out;
-              width: 25%;
-              float: left; }
-              .navbar .navHeader .nowPlaying .currentPlaying .upNext div h4 {
-                font-weight: normal;
+            body .navbar .navHeader .nowPlaying .currentPlaying:hover {
+              transition: all 0.3s ease-in-out; }
+              body .navbar .navHeader .nowPlaying .currentPlaying:hover .upNow {
+                transition: all 0s ease-in-out; }
+              body .navbar .navHeader .nowPlaying .currentPlaying:hover .upNext {
+                width: 100%;
+                position: absolute;
+                top: 0%;
+                right: 0%;
+                padding-left: 4%;
+                z-index: 10;
                 transition: all 0.3s ease-in-out; }
-            .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack {
-              transition: all 0.3s ease-in-out;
-              width: 75%; }
-              .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack h5 {
-                font-size: 12px; }
-              .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack h6 {
-                font-size: 10px; }
-        .navbar .navHeader .nowPlaying img {
-          z-index: 50;
-          float: right;
-          width: auto;
+            body .navbar .navHeader .nowPlaying .currentPlaying .upNow {
+              position: absolute !important;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              z-index: 0;
+              display: flex;
+              justify-content: center;
+              padding-top: 2%;
+              padding-left: 4%;
+              transition: all 0s ease-in-out;
+              flex-direction: column; }
+              body .navbar .navHeader .nowPlaying .currentPlaying .upNow h3 {
+                font-size: 16px;
+                transition: all 0.3s ease-in-out; }
+              body .navbar .navHeader .nowPlaying .currentPlaying .upNow h4 {
+                font-size: 14px;
+                font-weight: bold;
+                transition: all 0.3s ease-in-out; }
+            body .navbar .navHeader .nowPlaying .currentPlaying .upNext {
+              height: 100%;
+              width: 10%;
+              position: absolute;
+              top: 0%;
+              right: 10%;
+              z-index: -50;
+              display: flex;
+              justify-content: center;
+              padding-top: 2%;
+              flex-direction: column;
+              overflow: hidden;
+              transition: all 0.3s ease-in-out; }
+              body .navbar .navHeader .nowPlaying .currentPlaying .upNext div {
+                transition: all 0.3s ease-in-out;
+                width: 25%;
+                float: left; }
+                body .navbar .navHeader .nowPlaying .currentPlaying .upNext div h4 {
+                  font-weight: normal;
+                  transition: all 0.3s ease-in-out; }
+              body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack {
+                transition: all 0.3s ease-in-out;
+                width: 75%; }
+                body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack h5 {
+                  font-size: 12px; }
+                body .navbar .navHeader .nowPlaying .currentPlaying .upNext .nextTrack h6 {
+                  font-size: 10px; }
+          body .navbar .navHeader .nowPlaying img {
+            z-index: 50;
+            float: right;
+            width: auto;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0; }
+      body .navbar .navElements {
+        width: 100%;
+        height: 30%;
+        padding: 0 10%;
+        z-index: 0; }
+        body .navbar .navElements ul {
+          padding: 0;
+          width: 85%;
           height: 100%;
-          position: absolute;
-          top: 0;
-          right: 0; }
-    .navbar .navElements {
-      background-color: #003868;
+          float: left;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: row; }
+          body .navbar .navElements ul a {
+            text-decoration: none;
+            margin-right: 2%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            height: 100%; }
+            body .navbar .navElements ul a li {
+              text-align: left;
+              float: left;
+              padding: 0; }
+    body .mainHeader {
       width: 100%;
-      height: 30%;
+      height: 450px; }
+      body .mainHeader div {
+        z-index: 50;
+        position: relative;
+        height: 100%; }
+        body .mainHeader div .eventInfo {
+          height: 75%;
+          z-index: 50;
+          width: 48%;
+          margin: 0 auto;
+          padding-top: 8%; }
+          body .mainHeader div .eventInfo h2 {
+            z-index: 50; }
+          body .mainHeader div .eventInfo h4 {
+            z-index: 50; }
+          body .mainHeader div .eventInfo h3 {
+            z-index: 50; }
+        body .mainHeader div .upcomingEvents {
+          width: 100%;
+          height: 25%;
+          padding: 0;
+          margin: 0; }
+          body .mainHeader div .upcomingEvents section {
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+            display: flex; }
+            body .mainHeader div .upcomingEvents section > div {
+              width: 150px;
+              height: 150px;
+              position: absolute;
+              padding: 2%;
+              bottom: 20%;
+              left: 2%;
+              text-align: center;
+              float: left;
+              display: flex;
+              justify-content: center;
+              vertical-align: middle;
+              text-align: center;
+              align-items: center; }
+              body .mainHeader div .upcomingEvents section > div h4 {
+                width: 100%;
+                margin: 0 auto; }
+              body .mainHeader div .upcomingEvents section > div h3 {
+                width: 100%;
+                margin: 0 auto; }
+            body .mainHeader div .upcomingEvents section .iconButton {
+              width: 150px;
+              height: 150px;
+              position: absolute;
+              padding: 2%;
+              bottom: 20%;
+              left: 2%;
+              text-align: center;
+              display: flex;
+              justify-content: center;
+              vertical-align: middle;
+              text-align: center;
+              align-items: center; }
+              body .mainHeader div .upcomingEvents section .iconButton:hover > i {
+                display: none; }
+              body .mainHeader div .upcomingEvents section .iconButton:hover .iconButtonHover {
+                display: flex; }
+                body .mainHeader div .upcomingEvents section .iconButton:hover .iconButtonHover i {
+                  font-size: 32px;
+                  display: block; }
+              body .mainHeader div .upcomingEvents section .iconButton i {
+                width: 100%;
+                text-align: center;
+                font-size: 60px;
+                margin: 0;
+                padding: 0; }
+            body .mainHeader div .upcomingEvents section .iconButton_M {
+              width: 150px;
+              height: 150px;
+              position: absolute;
+              padding: 2%;
+              bottom: 20%;
+              left: 2%;
+              text-align: center;
+              display: flex;
+              justify-content: center;
+              vertical-align: middle;
+              text-align: center;
+              align-items: center; }
+              body .mainHeader div .upcomingEvents section .iconButton_M i {
+                width: 100%;
+                text-align: center;
+                font-size: 60px;
+                margin: 0;
+                padding: 0; }
+            body .mainHeader div .upcomingEvents section .iconButtonHover {
+              width: 100%;
+              display: none;
+              background-color: transparent; }
+              body .mainHeader div .upcomingEvents section .iconButtonHover:hover .iconButtonHover {
+                display: flex; }
+                body .mainHeader div .upcomingEvents section .iconButtonHover:hover .iconButtonHover i {
+                  font-size: 32px;
+                  display: block;
+                  padding: 0 2%; }
+              body .mainHeader div .upcomingEvents section .iconButtonHover i {
+                font-size: 32px;
+                display: none; }
+            body .mainHeader div .upcomingEvents section p {
+              width: 60%;
+              height: 98%;
+              margin: 0;
+              padding: 1% 0%;
+              float: right; }
+    body .pageContent {
+      width: 100%;
       padding: 0 10%;
-      z-index: 0; }
-      .navbar .navElements ul {
-        list-style-type: none;
-        font-family: "Nirmala UI";
-        font-weight: bold;
+      padding-bottom: 2%;
+      margin: 0 !important;
+      display: block;
+      position: relative; }
+      body .pageContent .content {
+        width: 100%;
         padding: 0;
-        width: 65%;
-        float: left;
-        line-height: 45px; }
-        .navbar .navElements ul a {
+        margin: 0 auto;
+        margin-bottom: 25px;
+        float: left; }
+        body .pageContent .content header {
+          width: 100%;
+          float: left; }
+          body .pageContent .content header p {
+            padding: 20%;
+            font-size: 24px; }
+            body .pageContent .content header p span {
+              font-weight: bold !important; }
+        body .pageContent .content > h2 {
+          width: 100%;
+          float: left;
+          font-size: 1.2rem;
+          padding: 4%;
+          margin: auto; }
+        body .pageContent .content .articlesContainer {
+          width: 100%;
+          display: block;
+          position: relative;
+          -webkit-column-count: 2;
+          -moz-column-count: 2;
+          column-count: 2;
+          padding: 15px;
+          margin: 0; }
+          body .pageContent .content .articlesContainer > h2 {
+            font-size: 1.2rem;
+            padding: 2%;
+            margin: 0 auto; }
+          body .pageContent .content .articlesContainer article {
+            height: 350px;
+            width: 100%;
+            float: left;
+            margin-bottom: 15px;
+            position: relative;
+            transition: all 0.3s ease-in-out; }
+            body .pageContent .content .articlesContainer article:hover {
+              transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article:hover .articleContent {
+                top: 0;
+                left: 0;
+                transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article:hover .articleContent .articleDate {
+                  top: 5%;
+                  left: 5%;
+                  transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails {
+                  width: 60%;
+                  float: right;
+                  margin: 6% auto;
+                  transition: all 0.3s ease-in-out; }
+                  body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h3 {
+                    font-size: 24px; }
+                  body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h4 {
+                    font-size: 18px; }
+                  body .pageContent .content .articlesContainer article:hover .articleContent .articleDetails h5 {
+                    font-size: 18px; }
+            body .pageContent .content .articlesContainer article .articleContent {
+              position: absolute;
+              top: 65%;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: 10;
+              transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article .articleContent .articleDate {
+                width: 110px;
+                height: 110px;
+                position: absolute;
+                top: -10%;
+                left: 5%;
+                display: flex;
+                justify-content: center;
+                vertical-align: middle;
+                text-align: center;
+                transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article .articleContent .articleDetails {
+                width: 60%;
+                float: right;
+                margin: 3% auto;
+                transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article .articleContent .articleDetails h3 {
+                  font-size: 20px;
+                  transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article .articleContent .articleDetails h4 {
+                  font-size: 14px;
+                  transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article .articleContent .articleDetails h5 {
+                  font-size: 14px;
+                  transition: all 0.3s ease-in-out; }
+              body .pageContent .content .articlesContainer article .articleContent .articleParagraph {
+                width: 100%;
+                height: 25%;
+                padding: 4%;
+                transition: all 0.3s ease-in-out; }
+                body .pageContent .content .articlesContainer article .articleContent .articleParagraph p {
+                  font-size: 15px; }
+                body .pageContent .content .articlesContainer article .articleContent .articleParagraph button {
+                  width: 90%;
+                  position: absolute;
+                  bottom: 3%;
+                  left: 5%; }
+                  body .pageContent .content .articlesContainer article .articleContent .articleParagraph button a {
+                    padding: 1%; }
+            body .pageContent .content .articlesContainer article .backgroundArticle {
+              z-index: 0;
+              float: left;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0; }
+      body .pageContent .rightColumn {
+        width: 100%;
+        margin: 0 auto;
+        float: right;
+        padding-left: 15px; }
+        body .pageContent .rightColumn section {
+          width: 100%; }
+          body .pageContent .rightColumn section ul {
+            padding: 0;
+            margin: 0;
+            width: 100%; }
+            body .pageContent .rightColumn section ul > li {
+              padding: 4%;
+              font-weight: bold; }
+            body .pageContent .rightColumn section ul a li {
+              padding: 4%; }
+    body > footer {
+      margin: 0;
+      padding: 0 !important; }
+      body > footer > div {
+        margin: 0 !important;
+        padding: 0 !important; }
+    body footer {
+      height: auto;
+      width: 100%;
+      display: block;
+      position: relative;
+      float: left; }
+      body footer div {
+        width: 100%;
+        height: 100%; }
+        body footer div .copyrightPrivacy {
+          width: 100%;
           display: inline-block;
-          text-decoration: none;
-          padding-left: 1%; }
-          .navbar .navElements ul a li {
-            color: #FFF; }
-        .navbar .navElements ul a:nth-child(1) {
-          padding: 0; } }
+          margin: 0 auto; }
+          body footer div .copyrightPrivacy ul {
+            list-style-type: none;
+            width: 75%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: row; }
+            body footer div .copyrightPrivacy ul a {
+              float: left;
+              margin: 2%;
+              text-align: center; }
+        body footer div .sponsorsPartners {
+          width: 100%;
+          margin-top: 2%; }
+          body footer div .sponsorsPartners h4 {
+            font-size: 18px;
+            text-align: center;
+            padding-top: 2%;
+            padding-bottom: 0; }
+          body footer div .sponsorsPartners div {
+            height: 80%;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 2% auto;
+            flex-direction: row; }
+            body footer div .sponsorsPartners div a {
+              height: 90%;
+              width: 20%;
+              display: flex;
+              justify-content: center; }
+              body footer div .sponsorsPartners div a img {
+                height: 100%;
+                margin: 0 auto; }
+        body footer div .author {
+          width: 100%; }
+          body footer div .author h4 {
+            font-size: 12px; }
+        body footer div .supportedBy {
+          width: 100%;
+          height: 50%; }
+          body footer div .supportedBy h4 {
+            padding: 0;
+            padding-top: 2%;
+            margin: 0; }
+          body footer div .supportedBy div {
+            height: 80%;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 2% auto;
+            flex-direction: row; }
+            body footer div .supportedBy div a {
+              height: 100%;
+              width: 50%;
+              padding: 1%; }
+              body footer div .supportedBy div a img {
+                height: auto;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 25%; } }
