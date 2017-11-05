@@ -41,15 +41,14 @@
             </div>
             <div class="navElements">
                 <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="#"><li>Programs</li></a>
-                    <a href="arts_diaries.html"><li>Arts Diaries</li></a>
-                    <a href="membership_donation.html"><li>Membership & Dontations</li></a>
-                    <a href="#"><li>Supporters</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Contact Us</li></a>
-                </ul>
-                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="arts_diaries.html">Arts Diaries</a></li>
+                    <li><a href="membership_donation.html">Membership & Dontations</a></li>
+                    <li><a href="#">Supporters</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>  
             </div>
         </nav>
 
@@ -96,12 +95,11 @@
                         <form>
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
-                                    <label for="exampleFormControlSelect1">
+                                    <label for="introPickPartner">
                                         ArtSound Arts Partners receive priority.
                                         <br><br>Please submit your item at least two weeks prior to your event.
                                         If you're an ArtSound Arts Partner, tell us which one you are - otherwise please use the Not yet an Arts Partner box below.</label>
                                     <select class="form-control" id="exampleFormControlSelect1">
-                                            <option value="please select one"></option>
                                             <option value="360 Fashion Market">360 Fashion Market</option>
                                             <option value="ANU School of Music">ANU School of Music</option>
                                             <option value="Art Song Canberra">Art Song Canberra</option>
@@ -125,23 +123,23 @@
                                     </select>
                                 </div>
                                 <div class="customerPartnerInput col-xs-12 col-md-6">
-                                    <label for="exampleFormControlTextarea1">Not yet an arts partner? Tell us the name of your organisation</label>
+                                    <label for="partnerOrNah">Not yet an arts partner? Tell us the name of your organisation</label>
                                     
-                                    <input type="partner" class="form-control" id="partnerInput" placeholder="partner name here">
+                                    <input type="text" class="form-control" id="partnerInput" placeholder="partner name here">
                                     <input class="form-check-input" type="checkbox" value="">
                                     <p>Option one is this and that&mdash;be sure to include why it's great</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
-                                    <label for="exampleFormControlTextarea1">What is your event name?</label>
-                                    <input type="partner" class="form-control" id="partnerInput" placeholder="event name here">
+                                    <label for="userName">What is your event name?</label>
+                                    <input type="text" class="form-control" id="partnerInputName" placeholder="event name here">
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <label for="exampleFormControlTextarea1">What date is your event opening</label>                                        
+                                    <label for="openingDate">What date is your event opening</label>                                        
                                     <div class="row">
                                         <div class="col-xs-4">
-                                            <select class="form-control" id="day">
+                                            <select class="form-control" id="dayFrom">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
@@ -177,7 +175,7 @@
                                                 
                                             </div>
                                             <div class="col-xs-4">
-                                                <select class="form-control" id="month">
+                                                <select class="form-control" id="monthFrom">
                                                         <option value="Janurary">Janurary</option>
                                                         <option value="Feburary">Feburary</option>
                                                         <option value="March">March</option>
@@ -193,7 +191,7 @@
                                                 </select>
                                             </div>
                                             <div class="col-xs-4">
-                                                <select class="form-control" id="year">
+                                                <select class="form-control" id="yearFrom">
                                                         <option value="2017">2017</option>
                                                         <option value="2018">2018</option>
                                                         <option value="2019">2019</option>
@@ -208,10 +206,10 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <label for="exampleFormControlTextarea1">What date is your event closing</label>                                        
+                                    <label for="closingDate">What date is your event closing</label>                                        
                                     <div class="row">
                                         <div class="col-xs-4">
-                                            <select class="form-control" id="day">
+                                            <select class="form-control" id="dayTo">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
@@ -247,7 +245,7 @@
                                                 
                                             </div>
                                             <div class="col-xs-4">
-                                                <select class="form-control" id="month">
+                                                <select class="form-control" id="monthTo">
                                                         <option value="Janurary">Janurary</option>
                                                         <option value="Feburary">Feburary</option>
                                                         <option value="March">March</option>
@@ -263,7 +261,7 @@
                                                 </select>
                                             </div>
                                             <div class="col-xs-4">
-                                                <select class="form-control" id="year">
+                                                <select class="form-control" id="yearTo">
                                                         <option value="2017">2017</option>
                                                         <option value="2018">2018</option>
                                                         <option value="2019">2019</option>
@@ -278,7 +276,7 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <label for="exampleFormControlTextarea1">What are the opening hours for your event</label>                                        
+                                    <label for="openingHours">What are the opening hours for your event</label>                                        
                                     <div class="openingHours row">
                                         <div class="col-xs-4">
                                             <select class="form-control" id="timeFrom">
@@ -342,32 +340,32 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
-                                    <label for="exampleFormControlTextarea1">Where will your event be held</label>
-                                    <input type="location" class="form-control" id="locationInput" placeholder="location here">
+                                    <label for="eventLocation">Where will your event be held</label>
+                                    <input type="text" class="form-control" id="locationInput" placeholder="location here">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
-                                    <label for="exampleFormControlTextarea1">Event Website</label>
-                                    <input type="website" class="form-control" id="websiteInput" placeholder="https://yourwebsite.here">
+                                    <label for="eventWebsite">Event Website</label>
+                                    <input type="text" class="form-control" id="websiteInput" placeholder="https://yourwebsite.here">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="exampleFormControlTextarea1">Public Enquiries Phone Number</label>
-                                    <input type="publicPhone" class="form-control" id="publicPhone" placeholder="0412 345 678">
+                                    <label for="publicNumber">Public Enquiries Phone Number</label>
+                                    <input type="number" class="form-control" id="publicPhone" placeholder="0412 345 678">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
-                                    <label for="exampleFormControlTextarea1">Your Name</label>
-                                    <input type="userNameInput" class="form-control" id="userNameInput" placeholder="your name">
+                                    <label for="yourName">Your Name</label>
+                                    <input type="text" class="form-control" id="userNameInput" placeholder="your name">
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <label for="exampleFormControlTextarea1">Phone Number (Private)</label>
-                                    <input type="privatePhone" class="form-control" id="privatePhone" placeholder="0412 345 678">
+                                    <label for="privateNumber">Phone Number (Private)</label>
+                                    <input type="number" class="form-control" id="privatePhone" placeholder="0412 345 678">
                                 </div>
                                 <div class="col-xs-12 col-md-12">
-                                    <label for="exampleFormControlTextarea1">Email Address (Private)</label>
-                                    <input type="privateEmail" class="form-control" id="privateEmail" placeholder="private_user@email.com">
+                                    <label for="privateEmail">Email Address (Private)</label>
+                                    <input type="email" class="form-control" id="privateEmail" placeholder="private_user@email.com">
                                 </div>
                                 <div class="termsAgreeButton col-xs-12">
                                     <input class="form-check-input" type="checkbox" value="">
@@ -379,84 +377,84 @@
                     </section>
                 </section>
         
-            <aside class="col-xs-12 col-lg-4 rightColumn">
-                <section class="whatsPlaying">
-                    <ul>
-                        <li>WHATS PLAYING / WHATS NEXT</li>
-                        <a href="#"><li><span>Sassy Players -</span> It's Gonna Be a Good Day</li></a>
-                        <a href="#"><li><span>Ellie & The Bunch -</span> The Sweetest Nightlife</li></a>
-                        <a href="#"><li><span>Sassy Players -</span> It's Gonna Be a Good Day</li></a>
-                    </ul>
-                </section>
-                <section class="showsSegments">
-                    <ul>
-                        <li>SHOWS / SEGMENTS</li>
-                        <a href="#"><li><span>Beale Street Caravan -</span> 11:00PM</li></a>
-                        <a href="#"><li><span>Putumayo World Music Hour -</span> 12:00AM</li></a>
-                        <a href="#"><li><span>After Hours -</span> 1:00AM</li></a>
-                    </ul>
-                </section>
-                <section class="latestNews">
-                    <ul>
-                        <li>LATEST NEWS</li>
-                        <a href="#"><li><span>Sassy Players -</span> It's Gonna Be a Good Day</li></a>
-                        <a href="#"><li><span>Ellie & The Bunch -</span> The Sweetest Nightlife</li></a>
-                        <a href="#"><li><span>Sassy Players -</span> It's Gonna Be a Good Day</li></a>
-                    </ul>
-                </section>
-                <section class="payments">
-                    <ul>
-                        <li>PAYMENTS</li>
-                        <a href="#"><li><span>Music Quiz Fundraiser</span> $27 - $216</li></a>
-                        <a href="#"><li><span>Donations</span> $1 - $5000</li></a>
-                        <a href="#"><li><span>Membership</span> $40 - $190</li></a>
-                    </ul>
-                </section>
-                <section class="connect">
-                    <ul>
-                        <li>CONNECT</li>
-                        <a href="#"><li>Facebook</li></a>
-                        <a href="#"><li>Twitter</li></a>
-                        <a href="#"><li>Email</li></a>
-                    </ul>
-                </section>
-                
-            </aside>
+                <aside class="col-xs-12 col-lg-4 rightColumn">
+                    <section class="whatsPlaying">
+                        <ul>
+                            <li>WHATS PLAYING / WHATS NEXT</li>
+                            <li><a href="#"><span>Sassy Players -</span> It's Gonna Be a Good Day</a></li>
+                            <li><a href="#"><span>Ellie & The Bunch -</span> The Sweetest Nightlife</a></li>
+                            <li><a href="#"><span>Sassy Players -</span> It's Gonna Be a Good Day</a></li>
+                        </ul>
+                    </section>
+                    <section class="showsSegments">
+                        <ul>
+                            <li>SHOWS / SEGMENTS</li>
+                            <li><a href="#"><span>Beale Street Caravan -</span> 11:00PM</a></li>
+                            <li><a href="#"><span>Putumayo World Music Hour -</span> 12:00AM</a></li>
+                            <li><a href="#"><span>After Hours -</span> 1:00AM</a></li>
+                        </ul>
+                    </section>
+                    <section class="latestNews">
+                        <ul>
+                            <li>LATEST NEWS</li>
+                            <li><a href="#"><span>Sassy Players -</span> It's Gonna Be a Good Day</a></li>
+                            <li><a href="#"><span>Ellie & The Bunch -</span> The Sweetest Nightlife</a></li>
+                            <li><a href="#"><span>Sassy Players -</span> It's Gonna Be a Good Day</a></li>
+                        </ul>
+                    </section>
+                    <section class="payments">
+                        <ul>
+                            <li>PAYMENTS</li>
+                            <li><a href="#"><span>Music Quiz Fundraiser</span> $27 - $216</a></li>
+                            <li><a href="#"><span>Donations</span> $1 - $5000</a></li>
+                            <li><a href="#"><span>Membership</span> $40 - $190</a></li>
+                        </ul>
+                    </section>
+                    <section class="connect">
+                        <ul>
+                            <li>CONNECT</li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Email</a></li>
+                        </ul>
+                    </section>
+                    
+                </aside>
+                </div>
             </div>
-        </div>
+        
        
 
         <footer class="container-fluid">
             <div class="row">
                 <section class="col-xs-12 copyrightPrivacy">
                     <ul>
-                        <a href="#"><li>Copyright 2017</li></a>
-                        <a href="#"><li>Site Map</li></a>
-                        <a href="#"><li>Privacy</li></a>
+                        <li><a href="#">Copyright 2017</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Privacy</a></li>
                     </ul>
                 </section>
                 <section class="col-xs-12 sponsorsPartners">
                     <h4>Sponsors and Partners</h4>
                     <div>
-                        <a href="#"><img src="src/img/sponsors/groove_warehouse.svg"></a>
-                        <a href="#"><img src="src/img/sponsors/artsong.svg"></a>
-                        <a href="#"><img src="src/img/sponsors/slyfox.svg"></a>
-                        <a href="#"><img src="src/img/sponsors/cimf.svg"></a>
-                        <a href="#"><img src="src/img/sponsors/ctc.svg"></a>
+                        <a href="#"><img src="src/img/sponsors/groove_warehouse.svg" alt="the groove warehouse logo"></a>
+                        <a href="#"><img src="src/img/sponsors/artsong.svg" alt="the art song logo"></a>
+                        <a href="#"><img src="src/img/sponsors/slyfox.svg" alt="the slyfox logo"></a>
+                        <a href="#"><img src="src/img/sponsors/cimf.svg" alt="the canberra internation music festival logo"></a>
+                        <a href="#"><img src="src/img/sponsors/ctc.svg" alt="the canberra theatre centre logo"></a>
                     </div>
                 </section>
                 <section class="col-xs-12 supportedBy">
                     <h4>Supported by</h4>
                     <div>               
-                        <a href="#"><img src="src/img/sponsors/actgov.png"></a>
-                        <a href="#"><img src="src/img/sponsors/broadcast.png"></a>
+                        <a href="#"><img src="src/img/sponsors/actgov.png" alt="the ACT government logo"></a>
+                        <a href="#"><img src="src/img/sponsors/broadcast.png" alt="the community broadcasting foundation logo"></a>
                     </div>
                 </section>
                 <section class="col-xs-12 author">
                         <h4><a href="#">Luke Secomb / u3160707</a></h4>  
                 </section>
             </div>
-            
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
