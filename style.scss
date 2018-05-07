@@ -195,6 +195,12 @@ body {
             }
         }
     }
+    .artDiaries {
+        background: url("img/art.jpg") center center no-repeat/cover !important;
+    }
+    .membersDonation {
+        background: url("img/membership.jpg") center center no-repeat/cover !important; 
+    }
     .mainHeader {
         width: 100%;
         height: 450px;
@@ -438,9 +444,6 @@ body {
                             color: $dark_grey;
                             background-color: $background;
                         }
-                        table {
-                            width: 100%;
-                        }
                     }
                 }
             }
@@ -533,7 +536,38 @@ body {
                 }
             }
             .donationContainer {
-
+                width: 100%;
+                height: 100%;
+                padding: 5%;
+                margin: 0 auto;
+                margin-bottom: 25px;
+                float: left;
+                background-color: $white;
+                display: flex;
+                justify-content: flex-start;
+                vertical-align: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                color: $light_blue;
+                p {
+                    margin-bottom: 25px;
+                    padding-bottom: 25px;
+                    border-bottom: 2px solid $light_blue;
+                }
+                .totalPay {
+                    width: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    float: left;
+                    display: flex;
+                    justify-content: center;
+                    vertical-align: middle;
+                    align-items: center;
+                    h3 {
+                        margin: auto;
+                        padding: 25%;
+                    }
+                }
             }
             .articlesContainer {
                 width: 100%;

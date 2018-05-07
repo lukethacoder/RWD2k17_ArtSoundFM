@@ -153,6 +153,12 @@ body {
       body .navElements ul a:nth-child(1) {
         padding: 0; }
 
+.artDiaries {
+  background: url("img/art.jpg") center center no-repeat/cover !important; }
+
+.membersDonation {
+  background: url("img/membership.jpg") center center no-repeat/cover !important; }
+
 .mainHeader {
   width: 100%;
   height: 450px;
@@ -349,8 +355,6 @@ body {
             font-weight: bold;
             color: #95989A;
             background-color: #E6E6E6; }
-          .pageContent .content .membershipContainer .row div table {
-            width: 100%; }
     .pageContent .content .membershipFormContainer {
       width: 100%;
       height: 100%;
@@ -422,6 +426,36 @@ body {
           .pageContent .content .membershipFormContainer .totalPay div h3 {
             margin: auto;
             padding: 25%; }
+    .pageContent .content .donationContainer {
+      width: 100%;
+      height: 100%;
+      padding: 5%;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      float: left;
+      background-color: #FFF;
+      display: flex;
+      justify-content: flex-start;
+      vertical-align: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      color: #1E73BD; }
+      .pageContent .content .donationContainer p {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #1E73BD; }
+      .pageContent .content .donationContainer .totalPay {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        align-items: center; }
+        .pageContent .content .donationContainer .totalPay h3 {
+          margin: auto;
+          padding: 25%; }
     .pageContent .content .articlesContainer {
       width: 100%;
       display: block;
